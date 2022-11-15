@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet ID registration Form</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Genelral Information</legend>
+            Name:  <input type="text" name="petName"><br>
+            Date of Birthday: <input type="date" name="datePet"><br>
+            Weight: <input type="number" name="weightPet" min="0" max="500" placeholder="kg"><br>
+            Owner: <input type="email" name="emPet">
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Detail Information</legend>
+            Fur Color:
+            <input type="radio" name="rdPet" value="White"> White
+            <input type="radio" name="rdPet" value="Black"> Black
+            <input type="radio" name="rdPet" value="Tam's The"> Tam's The
+            <br>
+
+            Favorite things:
+            <input type="checkbox" name="cbPet" value="milk"> Milk
+            <input type="checkbox" name="cbPet" value="playing"> Playing
+            <input type="checkbox" name="cbPet" value="Walking"> Walking
+            <br>
+
+            Speacies:
+            <select name="slBreed">
+                <option value="AmericanCat">American Bobtail Cat 1</option>
+                <option value="AmericanCat">American Bobtail Cat 2</option>
+                <option value="AmericanCat">American Bobtail Cat 3</option>
+                <option value="AmericanCat">American Bobtail Cat 4</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Other Information</legend>
+            Pet Photo: <input type="file" name="psPet">
+            Note: <textarea name="petNote" cols="30"></textarea>
+        </fieldset>
+    </form>
+</body>
+</html>

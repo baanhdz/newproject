@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form lấy survey khách hàng</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        h2 {
+            font-weight: normal;
+            font-size: 160%;
+            margin: 0 0 5px 0;
+        }     
+    </style>
+</head>
+<body>
+    <div class="container bg">
+        <div class="text-center">
+            <h2>Market Research Survey</h2>
+            <p>Please take a few moments to complete this satisfaction survey.</p>
+        </div>
+        <hr>
+        <form action="#" method="post">
+            <div>
+                <h5>What is your age range?  </h5>
+                <select name="slAgerange">
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-50">35-50</option>
+                    <option value="50+">50+</option>
+                </select>
+            </div>
+            <div>
+                <h5>What is your yearly income range?</h5>
+                <select name="slAgerange">
+                    <option value="$0-$25,000">$0-$25,000</option>
+                    <option value="$25,100-$50,000">$25,100-$50,000</option>
+                    <option value="$50,100-$100,000">$50,100-$100,000</option>
+                    <option value="$100,000+">$100,000+</option>
+                </select>
+            </div>
+            <div>
+                <h5>Gender Identity</h5>
+                <input type="radio" name="rdMale" value="Male">
+                <label for="rdMale">Male</label>
+                <br>
+                <input type="radio" name="rdFemale" value="FeMale">
+                <label for="rdFemale">FeMale</label>
+                <br>
+                <input type="radio" name="rdNonbi" value="Nonbinary">
+                <label for="rdNonbi">Nonbinary</label>
+                <br>
+                <input type="radio" name="rdOther" value="Other">
+                <label for="rdOther">Other</label>
+                <br>
+                <input type="text" maxlength="250" name="txtOther">
+            </div>
+            <div>
+                <h5>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h5>
+                <input type="checkbox" name="cbPro1" value="Product1">
+                <label for="cbPro1"> Product 1</label>
+                <br>
+                <input type="checkbox" name="cbPro2" value="Product2">
+                <label for="cbPro2"> Product 2</label>
+                <br>
+                <input type="checkbox" name="cbPro3" value="Product3">
+                <label for="cbPro3"> Product 3</label>
+            </div>
+            <div>
+                <h5>How often would you use our new product?</h5>
+                <input type="radio" name="rdDaily" value="Daily">
+                <label for="rdDaily">DaiLy</label>
+                <br>
+                <input type="radio" name="rdWeekly" value="Weekly">
+                <label for="rdWeekly">Weekly</label>
+                <br>
+                <input type="radio" name="rdMonthly" value="Monthly">
+                <label for="rdMonthly">Monthly</label>
+            </div>
+            <div>
+                <h5>What would you pay for the new product?</h5><br>
+                <div class="row" >
+                    <div class="col-sm-1 p-3" style="width: 18px;">$</div>
+                    <div class="col-sm-2 p-3">  
+                        <p> <input type="text" name="txtPayProduct" placeholder="Dollars"> Dollars </p>
+                    </div>
+                    <div class="col-sm-1 p-3" style="width: 18px;">,</div>
+                    <div class="col-sm-2 p-3">
+                        <p><input type="text" name="txtPayProduct" placeholder="Cents"> Cents </p>
+                    </div>  
+                </div>
+            </div>
+            <div>
+                <h5>What features would you like to see in the new product.</h5>
+                <textarea name="txtaFeatures" cols="60" rows="5"></textarea>
+            </div>
+            <div>
+                <h5>Please rate your level of agreement with the following statements.</h5>
+                <table class="table-bordered">
+                    <tr class="bg-light ">
+                        <th></th>
+                        <th>Strong Disagree</th>
+                        <th>Disagree</th>
+                        <th>Agree</th>
+                        <th>Strongly Agree</th>
+                    </tr>
+                    <tr class="text-center">
+                        <td>Our products are priced fairly.</td>
+                        <td>
+                            <input type="radio" name="rdLevel" >
+                            <p>1</p>
+                        </td>
+                        <td>
+                            <input type="radio" name="rdLevel" >
+                            <p>2</p>
+                        </td>
+                        <td>
+                            <input type="radio" name="rdLevel" >
+                            <p>3</p>
+                        </td>
+                        <td>
+                            <input type="radio" name="rdLevel" >
+                            <p>4</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>
