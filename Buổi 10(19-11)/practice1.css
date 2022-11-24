@@ -1,0 +1,9 @@
+.ex2 h1{
+    color: green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.ex2 p{
+    color: blue;
+    font-size: 20px;
+}

@@ -1,0 +1,28 @@
+/*
+-letter-spacing: Khoảng cách giữa các chữ cái.
+-
+
+
+
+*/
+
+
+
+
+h6{
+  color: rgb(61, 158, 126);
+}
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+#Gender{
+  background-color: rgb(22, 163, 128);
+}
+
+#hrmax{
+  color:rgb(22, 163, 128) ;
+  box-sizing: 50px;
+}
